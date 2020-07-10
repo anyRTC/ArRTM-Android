@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+    <Button
+        android:id="@+id/jian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="jian"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="减"></Button>
+
+    <Button
+        android:id="@+id/jia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:onClick="jia"
+        android:text="加"></Button>
+</RelativeLayout>

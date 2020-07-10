@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserAttActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="setAttr"
+            android:background="@android:color/transparent"
+            android:text="全量设置本地用户属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="addOrUpdate"
+            android:background="@android:color/transparent"
+            android:text="添加或更新本地用户的属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="deleteLocal"
+            android:background="@android:color/transparent"
+            android:text="删除本地用户的指定属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="cleanLocal"
+            android:background="@android:color/transparent"
+            android:text="清空本地用户的属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="getuserattr"
+            android:background="@android:color/transparent"
+            android:text="获取指定用户的全部属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="getuservalue"
+            android:background="@android:color/transparent"
+            android:text="获取指定用户指定属性名的属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

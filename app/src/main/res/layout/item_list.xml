@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_other"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="4dp"
+        android:background="#ffffff"
+        app:cardBackgroundColor="#333333"
+        app:cardElevation="2dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp">
+        <TextView
+            android:id="@+id/tv_other"
+            android:layout_width="wrap_content"
+            android:padding="12dp"
+
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_self"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="4dp"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        app:cardBackgroundColor="#ffffff"
+        app:cardElevation="2dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp">
+        <TextView
+            android:id="@+id/tv_self"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

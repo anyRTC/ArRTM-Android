@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CallManageActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+    </FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardElevation="3dp"
+        android:layout_marginTop="10dp"
+        android:padding="8dp">
+        <EditText
+            android:id="@+id/et_uesr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:hint="需要呼叫的人的ID"
+            android:background="@null"
+            android:paddingLeft="12dp"
+            android:textSize="13sp"
+            android:maxEms="8"
+            ></EditText>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:onClick="send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:text="呼叫"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="40dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:onClick="cancle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:text="取消呼叫"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChannelAttrActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardElevation="3dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp">
+        <EditText
+            android:id="@+id/et_channel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:hint="指定频道id"
+            android:background="@null"
+            android:paddingLeft="12dp"
+            android:textSize="13sp"
+            android:maxEms="8"
+            ></EditText>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="setAttr"
+            android:background="@android:color/transparent"
+            android:text="全量设置某指定频道的属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="addOrUpdate"
+            android:background="@android:color/transparent"
+            android:text="添加或更新某指定频道的属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="deleteLocal"
+            android:background="@android:color/transparent"
+            android:text="删除某指定频道的指定属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="cleanChannel"
+            android:background="@android:color/transparent"
+            android:text="清空某指定频道的属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="getChannelattr"
+            android:background="@android:color/transparent"
+            android:text="获取某指定频道的全部属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:onClick="getChannelvalue"
+            android:background="@android:color/transparent"
+            android:text="获取某指定频道指定属性名的属性"></Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
