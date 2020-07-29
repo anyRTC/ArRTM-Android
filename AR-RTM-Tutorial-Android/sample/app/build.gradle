@@ -41,5 +41,5 @@ dependencies {
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
 
     //rtm
-    implementation 'org.ar:rtm:1.0.0.2'
+    implementation 'org.ar:rtm:1.0.0.4'
 }
