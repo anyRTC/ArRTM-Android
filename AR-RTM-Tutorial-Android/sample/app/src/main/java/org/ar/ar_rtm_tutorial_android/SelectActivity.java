@@ -53,4 +53,11 @@ public class SelectActivity extends AppCompatActivity {
         }
         return super.onKeyDown(keyCode, event);
     }
+
+    public void Leave(View view) {
+        RTMApplication.getInstance().getRtmManager().getRtmClient().logout(null);
+        RTMApplication.getInstance().ReleaseRtmManager();
+        RTMApplication.getInstance().setUserId("");
+        finish();
+    }
 }

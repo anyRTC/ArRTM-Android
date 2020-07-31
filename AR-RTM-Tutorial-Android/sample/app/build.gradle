@@ -39,7 +39,6 @@ dependencies {
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
-
     //rtm
-    implementation 'org.ar:rtm:1.0.0.4'
+    implementation 'org.ar:rtm:1.0.0.6'
 }

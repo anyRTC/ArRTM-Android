@@ -29,5 +29,28 @@
 
     </EditText>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#333333"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:onClick="Leave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:text="退出"></Button>
+
+    </androidx.cardview.widget.CardView>
+
 
 </LinearLayout>

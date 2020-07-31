@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.KeyEvent;
+import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -276,4 +277,14 @@ public class ChatActivity extends AppCompatActivity {
         return super.onKeyDown(keyCode, event);
     }
 
+    public void Leave(View view) {
+        if (type==1){//单聊
+        }else {
+            rtmChannel.leave(null);
+            rtmChannel.release();
+            rtmChannel=null;
+        }
+        RTMApplication.getInstance().getRtmManager().unregisterListener(rtmClientListener);
+        finish();
+    }
 }
