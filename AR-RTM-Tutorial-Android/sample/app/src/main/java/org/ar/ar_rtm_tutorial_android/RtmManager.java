@@ -25,7 +25,7 @@ public class RtmManager {
     }
 
     public void init() {
-        String appID = mContext.getString(R.string.rtm_app_id);
+        String appID = mContext.getString(R.string.app_id);
 
         try {
             mRtmClient = RtmClient.createInstance(mContext, appID, new RtmClientListener() {

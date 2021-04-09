@@ -1,6 +1,6 @@
 #### 快速开始 🔜
 
-本示例包含了 RTM 4.0 SDK 以及集成 Demo
+本示例包含了 RTM  SDK 以及集成 Demo
 
 Demo演示了以下功能
 
