@@ -31,9 +31,9 @@ Demo演示了以下功能
 
 #### 集成SDK🔜
 
-你可以查看文档了解如何 [快速集成](https://docs.anyrtc.io/rtm-android/docs/quickstart)
+你可以查看文档了解如何 [快速集成](https://docs.anyrtc.io/cn/RealTimeMessage/quickstart/setup/messaging_android)
 
-完整文档地址 👉 [API参考](https://docs.anyrtc.io/rtm-android/docs/androidoverview)
+完整文档地址 👉 [API参考](https://docs.anyrtc.io/cn/RealTimeMessage/api-ref/rtm_android/androidoverview)
 
 
 
