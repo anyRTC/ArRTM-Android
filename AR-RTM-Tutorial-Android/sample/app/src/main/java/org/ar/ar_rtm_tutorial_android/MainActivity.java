@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Login(View view) {
-        if (TextUtils.isEmpty(getString(R.string.rtm_app_id))){
+        if (TextUtils.isEmpty(getString(R.string.app_id))){
             Toast.makeText(this,"请先设置appId",Toast.LENGTH_SHORT).show();
             return;
         }

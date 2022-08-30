@@ -1,7 +1,7 @@
 package org.ar.ar_rtm_tutorial_android;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chad.library.adapter.base.BaseViewHolder;
+import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 
 public class MessageApdater extends BaseQuickAdapter<MessageBean, BaseViewHolder> {
     public MessageApdater() {

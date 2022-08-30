@@ -47,6 +47,11 @@ public class RtmManager {
                 }
 
                 @Override
+                public void onTokenWillExpire() {
+
+                }
+
+                @Override
                 public void onTokenExpired() {
 
                 }

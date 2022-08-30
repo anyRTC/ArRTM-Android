@@ -106,6 +106,11 @@ public class ChatActivity extends AppCompatActivity {
         }
 
         @Override
+        public void onTokenWillExpire() {
+
+        }
+
+        @Override
         public void onTokenExpired() {
 
         }
